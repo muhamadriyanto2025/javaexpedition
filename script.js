@@ -141,7 +141,7 @@ const currentTheme = {
   key: 'light'
 };
 
-const waNumber = '6281234567890';
+const waNumber = '6285231127887';
 const waBase = `https://wa.me/${waNumber}?text=`;
 const waMessage = {
   en: 'Hello%20Voyage%20Horizon%2C%20I%20want%20to%20book%20a%20trip%20with%20you.',
@@ -163,6 +163,11 @@ function applyTranslations(lang) {
   links.forEach((link) => {
     link.href = `${waBase}${waMessage[lang]}`;
   });
+
+  const contactNumber = document.querySelector('.footer-whatsapp-number');
+  if (contactNumber) {
+    contactNumber.textContent = `📞 +62 ${waNumber.replace(/^628/, '852')}`;
+  }
 }
 
 function applyTheme(theme) {
