@@ -212,6 +212,10 @@ function applyTheme(theme) {
 
 const languageToggle = document.getElementById('langToggle');
 const themeToggle = document.getElementById('themeToggle');
+const galleryModal = document.getElementById('galleryModal');
+const modalImage = document.getElementById('modalImage');
+const modalTitle = document.getElementById('modalTitle');
+const modalClose = document.getElementById('modalClose');
 
 languageToggle.addEventListener('click', () => {
   currentLanguage.key = currentLanguage.key === 'en' ? 'id' : 'en';
@@ -221,6 +225,47 @@ languageToggle.addEventListener('click', () => {
 themeToggle.addEventListener('click', () => {
   const nextTheme = currentTheme.key === 'light' ? 'dark' : 'light';
   applyTheme(nextTheme);
+});
+
+const galleryButtons = document.querySelectorAll('.gallery-card');
+
+galleryButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const fullImage = button.dataset.full;
+    const title = button.dataset.title || 'Java Expedition';
+
+    if (!fullImage || !galleryModal || !modalImage || !modalTitle) return;
+
+    modalImage.src = fullImage;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    galleryModal.classList.add('is-open');
+    galleryModal.setAttribute('aria-hidden', 'false');
+  });
+});
+
+const closeGalleryModal = () => {
+  if (!galleryModal) return;
+  galleryModal.classList.remove('is-open');
+  galleryModal.setAttribute('aria-hidden', 'true');
+};
+
+if (modalClose) {
+  modalClose.addEventListener('click', closeGalleryModal);
+}
+
+if (galleryModal) {
+  galleryModal.addEventListener('click', (event) => {
+    if (event.target === galleryModal) {
+      closeGalleryModal();
+    }
+  });
+}
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && galleryModal && galleryModal.classList.contains('is-open')) {
+    closeGalleryModal();
+  }
 });
 
 const savedTheme = localStorage.getItem('travelTheme') || 'light';

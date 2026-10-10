@@ -618,10 +618,21 @@ body[data-theme="dark"] .btn-secondary {
 }
 
 .gallery-card {
+  position: relative;
   overflow: hidden;
+  border: none;
+  padding: 0;
   border-radius: 22px;
   min-height: 220px;
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-card:hover,
+.gallery-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 32px rgba(15, 23, 42, 0.12);
 }
 
 .gallery-card.tall {
@@ -634,8 +645,111 @@ body[data-theme="dark"] .btn-secondary {
 }
 
 .gallery-card img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.gallery-card:hover img,
+.gallery-card:focus-visible img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 18px;
+  background: linear-gradient(180deg, rgba(11, 18, 32, 0.04), rgba(11, 18, 32, 0.72));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.gallery-overlay span {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.gallery-card:hover .gallery-overlay,
+.gallery-card:focus-visible .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.82);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  z-index: 300;
+}
+
+.gallery-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 960px;
+  width: min(90vw, 960px);
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 25px 80px rgba(2, 6, 23, 0.5);
+}
+
+.modal-content img {
+  width: 100%;
+  display: block;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.modal-caption {
+  padding: 18px 20px 20px;
+  background: var(--surface);
+}
+
+.modal-caption h3 {
+  margin: 0 0 6px;
+  font-size: 1.4rem;
+}
+
+.modal-caption p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
 }
 
 blockquote {
