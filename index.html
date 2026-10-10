@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bilingual international and domestic travel website for private tours and custom packages."
+    />
+    <title>Java Expedition | Travel & Tours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand" aria-label="Java Expedition Logo">
+          <span class="brand-mark">J</span>
+          <span>Java Expedition</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home" data-i18n="navHome">Home</a>
+          <a href="#packages" data-i18n="navPackages">Packages</a>
+          <a href="#experience" data-i18n="navExperience">Experience</a>
+          <a href="#why-us" data-i18n="navWhyUs">Why Us</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Toggle language">
+            <span>EN</span>
+            <span class="divider">/</span>
+            <span>ID</span>
+          </button>
+          <a href="#contact" class="btn btn-primary" data-i18n="navButton">Book now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">Trusted travel partner</p>
+            <h1 data-i18n="heroTitle">Explore the world with comfort, ease, and unforgettable memories.</h1>
+            <p class="lead" data-i18n="heroSubtitle">
+              Discover customized international journeys and special trips designed for Indonesian travelers.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact" data-i18n="ctaPrimary">Plan my trip</a>
+              <a class="btn btn-secondary" href="#packages" data-i18n="ctaSecondary">See packages</a>
+            </div>
+
+            <ul class="hero-meta">
+              <li><strong>20+</strong><span data-i18n="metaDestinations">destinations</span></li>
+              <li><strong>1.5k+</strong><span data-i18n="metaClients">happy travelers</span></li>
+              <li><strong>24/7</strong><span data-i18n="metaSupport">support</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Travel destination collage">
+            <div class="image-card image-main">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                alt="Beach destination"
+              />
+            </div>
+            <div class="floating-badge badge-top">
+              <span>⭐ 4.9</span>
+              <small data-i18n="badgeReview">Traveler rating</small>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span data-i18n="badgeTrip">Bali • Singapore • Europe</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <div class="stat-box">
+            <strong>12+</strong>
+            <span data-i18n="statYears">years of experience</span>
+          </div>
+          <div class="stat-box">
+            <strong>48h</strong>
+            <span data-i18n="statResponse">fast consultation</span>
+          </div>
+          <div class="stat-box">
+            <strong>100%</strong>
+            <span data-i18n="statCustom">custom itinerary</span>
+          </div>
+          <div class="stat-box">
+            <strong>VIP</strong>
+            <span data-i18n="statService">private service</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="packages">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="sectionTag">Popular packages</p>
+            <h2 data-i18n="packageHeading">Designed for every kind of traveler</h2>
+          </div>
+
+          <div class="card-grid three-col">
+            <article class="travel-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=80"
+                  alt="Bali trip"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-header">
+                  <h3 data-i18n="packageOneTitle">Bali Escape</h3>
+                  <span class="price">$299</span>
+                </div>
+                <p data-i18n="packageOneText">A 3-day leisure package with villas, tours, and iconic island experiences.</p>
+                <ul>
+                  <li data-i18n="packageOneItem1">Hotel + breakfast</li>
+                  <li data-i18n="packageOneItem2">Private airport transfer</li>
+                  <li data-i18n="packageOneItem3">City and beach tour</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="travel-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                  alt="Europe trip"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-header">
+                  <h3 data-i18n="packageTwoTitle">Europe Discovery</h3>
+                  <span class="price">$1,499</span>
+                </div>
+                <p data-i18n="packageTwoText">A complete European journey to France, Italy, and Switzerland with guided adventures.</p>
+                <ul>
+                  <li data-i18n="packageTwoItem1">Airfare assistance</li>
+                  <li data-i18n="packageTwoItem2">Hotel and transport</li>
+                  <li data-i18n="packageTwoItem3">Tour guide included</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="travel-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80"
+                  alt="Private tour"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-header">
+                  <h3 data-i18n="packageThreeTitle">Private Tailor</h3>
+                  <span class="price">Custom</span>
+                </div>
+                <p data-i18n="packageThreeText">Personalized travel planning for families, couples, groups, and business trips.</p>
+                <ul>
+                  <li data-i18n="packageThreeItem1">Flexible itinerary</li>
+                  <li data-i18n="packageThreeItem2">Visa guidance</li>
+                  <li data-i18n="packageThreeItem3">24/7 assistance</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="experienceTag">Travel experience</p>
+            <h2 data-i18n="experienceHeading">A journey that feels effortless from start to finish</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-box">
+              <div class="icon">✈️</div>
+              <h3 data-i18n="featureOneTitle">International flights</h3>
+              <p data-i18n="featureOneText">Flight arrangements for leisure, business, and family travel with trusted partners.</p>
+            </div>
+            <div class="feature-box">
+              <div class="icon">🏨</div>
+              <h3 data-i18n="featureTwoTitle">Comfort accommodation</h3>
+              <p data-i18n="featureTwoText">Carefully selected hotels and stays that match your budget and travel style.</p>
+            </div>
+            <div class="feature-box">
+              <div class="icon">🧭</div>
+              <h3 data-i18n="featureThreeTitle">Local guidance</h3>
+              <p data-i18n="featureThreeText">Expert recommendations and smooth logistics for a truly memorable trip.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why-us">
+        <div class="container why-grid">
+          <div class="why-copy">
+            <p class="eyebrow" data-i18n="whyTag">Why choose us</p>
+            <h2 data-i18n="whyHeading">We make travel simple, personal, and stress-free.</h2>
+            <p data-i18n="whyText">
+              Whether you are planning a family holiday, business trip, or dream vacation abroad, our team focuses on the details that matter most.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="whyItem1">Personalized itinerary planning</li>
+              <li data-i18n="whyItem2">Transparent pricing and honest guidance</li>
+              <li data-i18n="whyItem3">Friendly support before, during, and after travel</li>
+            </ul>
+          </div>
+
+          <div class="why-panel">
+            <div class="mini-card">
+              <span class="mini-label" data-i18n="panelLabel">Fast response</span>
+              <strong>15 mins</strong>
+              <small data-i18n="panelText">Average consultation time</small>
+            </div>
+            <div class="mini-card accent">
+              <span class="mini-label" data-i18n="panelLabel2">Best value</span>
+              <strong>Tailored</strong>
+              <small data-i18n="panelText2">Packages for every budget</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="reviewTag">Testimonials</p>
+            <h2 data-i18n="reviewHeading">What our travelers say</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote>
+              <p data-i18n="reviewOne">“The process was smooth and the itinerary was perfect for our family holiday. Everything felt well planned and comfortable.”</p>
+              <footer>— Nia, Jakarta</footer>
+            </blockquote>
+            <blockquote>
+              <p data-i18n="reviewTwo">“We traveled to Europe with great support from the team. The communication was clear and professional from day one.”</p>
+              <footer>— Arief, Bandung</footer>
+            </blockquote>
+            <blockquote>
+              <p data-i18n="reviewThree">“Very helpful and responsive. They made our private trip easy and memorable.”</p>
+              <footer>— Rina, Surabaya</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand" aria-label="Voyage Horizon Logo">
+            <span class="brand-mark">V</span>
+            <span>Voyage Horizon</span>
+          </div>
+          <p data-i18n="footerText">Travel with confidence, comfort, and a seamless experience for every destination.</p>
+        </div>
+
+        <div class="contact-box">
+          <h3 data-i18n="contactTitle">Contact us</h3>
+          <p>📍 Bali, Indonesia</p>
+          <p>📞 +62 812-3456-7890</p>
+          <p>✉️ hello@voyagehorizon.travel</p>
+        </div>
+
+        <div class="cta-box">
+          <p data-i18n="ctaFooter">Ready to start planning?</p>
+          <a
+            class="btn btn-primary whatsapp-button"
+            href="https://wa.me/6281234567890?text=Hello%20Voyage%20Horizon%2C%20I%20want%20to%20book%20a%20trip%20with%20you."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+          >
+            <span class="whatsapp-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.48A11.86 11.86 0 0 0 12.1 0C5.53 0 .13 5.4.13 12.04c0 2.12.56 4.2 1.62 6.03L0 24l6.08-1.6a11.97 11.97 0 0 0 5.98 1.52h.01c6.57 0 11.96-5.41 11.96-12.05 0-3.22-1.25-6.25-3.52-8.39ZM12.1 21.96h-.01a9.97 9.97 0 0 1-5.07-1.38l-.36-.22-3.6.95 1-3.5-.24-.37A9.93 9.93 0 0 1 2.16 12c0-5.5 4.48-9.97 10.01-9.97 2.67 0 5.17 1.04 7.04 2.93A9.87 9.87 0 0 1 12.1 21.96Zm5.52-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.51-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.35-.27.28-1.03 1.01-1.03 2.46 0 1.45 1.05 2.85 1.2 3.04.15.2 2.08 3.17 5.04 4.44.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.11.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span data-i18n="whatsappButton">Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/6285231127887?text=Hello%20Voyage%20Horizon%2C%20I%20want%20to%20book%20a%20trip%20with%20you."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.1 0C5.53 0 .13 5.4.13 12.04c0 2.12.56 4.2 1.62 6.03L0 24l6.08-1.6a11.97 11.97 0 0 0 5.98 1.52h.01c6.57 0 11.96-5.41 11.96-12.05 0-3.22-1.25-6.25-3.52-8.39ZM12.1 21.96h-.01a9.97 9.97 0 0 1-5.07-1.38l-.36-.22-3.6.95 1-3.5-.24-.37A9.93 9.93 0 0 1 2.16 12c0-5.5 4.48-9.97 10.01-9.97 2.67 0 5.17 1.04 7.04 2.93A9.87 9.87 0 0 1 12.1 21.96Zm5.52-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.51-1.78-1.68-2.08-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.35-.27.28-1.03 1.01-1.03 2.46 0 1.45 1.05 2.85 1.2 3.04.15.2 2.08 3.17 5.04 4.44.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.11.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z" fill="currentColor"/>
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
