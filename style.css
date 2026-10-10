@@ -546,10 +546,96 @@ body[data-theme="dark"] .btn-secondary {
   background: rgba(255, 255, 255, 0.35);
 }
 
-.testimonial-grid {
+.package-detail-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  margin-top: 28px;
+}
+
+.detail-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px 24px;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.05);
+}
+
+.detail-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.detail-box p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.accent-box {
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(15, 118, 110, 0.02));
+}
+
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.itinerary-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 22px 20px;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.04);
+}
+
+.day-chip {
+  display: inline-flex;
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.itinerary-card h3 {
+  margin: 16px 0 12px;
+  font-size: 1.2rem;
+}
+
+.itinerary-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: 22px;
+  min-height: 220px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.gallery-card.tall {
+  grid-row: span 2;
+  min-height: 460px;
+}
+
+.gallery-card.wide {
+  grid-column: span 2;
+}
+
+.gallery-card img {
+  height: 100%;
+  object-fit: cover;
 }
 
 blockquote {
@@ -657,6 +743,9 @@ blockquote footer {
   .footer-grid,
   .three-col,
   .feature-grid,
+  .itinerary-grid,
+  .package-detail-grid,
+  .gallery-grid,
   .testimonial-grid,
   .stats-grid {
     grid-template-columns: 1fr;
