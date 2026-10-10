@@ -39,7 +39,10 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.12), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.08), transparent 20%),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
   transition: background-color 0.25s ease, color 0.25s ease;
@@ -202,11 +205,66 @@ body[data-theme="dark"] .btn-secondary {
   background: rgba(17, 24, 39, 0.9);
 }
 
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseBadge {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 16px 28px rgba(37, 211, 102, 0.38);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 20px 34px rgba(37, 211, 102, 0.46);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .hero {
+  position: relative;
   padding: 72px 0 48px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(255, 255, 255, 0));
+  pointer-events: none;
 }
 
 .hero-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
@@ -276,6 +334,7 @@ body[data-theme="dark"] .btn-secondary {
 .hero-visual {
   position: relative;
   min-height: 540px;
+  animation: floatCard 6s ease-in-out infinite;
 }
 
 .image-card {
@@ -304,6 +363,7 @@ body[data-theme="dark"] .btn-secondary {
   border-radius: 18px;
   padding: 12px 16px;
   box-shadow: 0 14px 30px rgba(18, 32, 51, 0.08);
+  animation: pulseBadge 4s ease-in-out infinite;
 }
 
 .floating-badge span {
@@ -388,6 +448,7 @@ body[data-theme="dark"] .btn-secondary {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+  animation: revealUp 0.8s ease both;
 }
 
 .card-image img {
@@ -449,6 +510,7 @@ body[data-theme="dark"] .btn-secondary {
   border-radius: 24px;
   padding: 30px 22px;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.04);
+  animation: revealUp 0.9s ease both;
 }
 
 .icon {
@@ -587,6 +649,7 @@ body[data-theme="dark"] .btn-secondary {
   border-radius: 22px;
   padding: 22px 20px;
   box-shadow: 0 16px 32px rgba(15, 23, 42, 0.04);
+  animation: revealUp 1s ease both;
 }
 
 .day-chip {
@@ -611,6 +674,32 @@ body[data-theme="dark"] .btn-secondary {
   color: var(--muted);
 }
 
+.gallery-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover,
+.filter-btn:focus-visible {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -626,7 +715,11 @@ body[data-theme="dark"] .btn-secondary {
   min-height: 220px;
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
   cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.gallery-card.hidden {
+  display: none;
 }
 
 .gallery-card:hover,
@@ -682,6 +775,127 @@ body[data-theme="dark"] .btn-secondary {
 .gallery-card:hover .gallery-overlay,
 .gallery-card:focus-visible .gallery-overlay {
   opacity: 1;
+}
+
+.faq-section {
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 20px 22px;
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+.faq-item.active .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--muted);
+}
+
+.inquiry-wrap {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.inquiry-copy h2 {
+  margin: 16px 0 12px;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  letter-spacing: -0.05em;
+}
+
+.inquiry-copy p {
+  color: var(--muted);
+}
+
+.inquiry-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 32px rgba(15, 23, 42, 0.04);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.field-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.field-grid label span {
+  color: var(--text);
+}
+
+.field-grid input,
+.field-grid select,
+.field-grid textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text);
+  font: inherit;
+}
+
+.field-grid textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.inquiry-form .btn {
+  margin-top: 20px;
+  width: 100%;
 }
 
 .gallery-modal {
@@ -854,6 +1068,7 @@ blockquote footer {
 
   .hero-grid,
   .why-grid,
+  .inquiry-wrap,
   .footer-grid,
   .three-col,
   .feature-grid,

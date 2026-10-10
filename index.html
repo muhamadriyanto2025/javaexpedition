@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Bilingual international and domestic travel website for private tours and custom packages."
+      content="Java Expedition offers private East Java tours including Bromo, Tumpak Sewu, and Ijen with English and Indonesian support for unforgettable travel experiences."
     />
+    <meta name="theme-color" content="#0f766e" />
+    <meta property="og:title" content="Java Expedition | Bromo, Tumpak Sewu & Ijen Tours" />
+    <meta
+      property="og:description"
+      content="Private tour packages from Surabaya and Malang for Bromo, Tumpak Sewu, and Ijen adventures."
+    />
+    <meta property="og:type" content="website" />
     <title>Java Expedition | Travel & Tours</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +48,14 @@
             <span class="divider">/</span>
             <span>ID</span>
           </button>
-          <a href="#contact" class="btn btn-primary" data-i18n="navButton">Book now</a>
+          <a
+            href="https://wa.me/6285231127887?text=Hello%20Java%20Expedition%2C%20I%20want%20to%20book%20a%20trip%20with%20you."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            data-i18n="navButton"
+            >Book now</a
+          >
         </div>
       </div>
     </header>
@@ -57,7 +71,14 @@
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact" data-i18n="ctaPrimary">Plan my trip</a>
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/6285231127887?text=Hello%20Java%20Expedition%2C%20I%20want%20to%20book%20a%20trip%20with%20you."
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="ctaPrimary"
+                >Plan my trip</a
+              >
               <a class="btn btn-secondary" href="#packages" data-i18n="ctaSecondary">See packages</a>
             </div>
 
@@ -288,58 +309,103 @@
             <h2 data-i18n="galleryHeading">Experiences from Java adventures</h2>
           </div>
 
+          <div class="gallery-filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="bromo">Bromo</button>
+            <button class="filter-btn" type="button" data-filter="tumpak-sewu">Tumpak Sewu</button>
+            <button class="filter-btn" type="button" data-filter="ijen">Ijen</button>
+            <button class="filter-btn" type="button" data-filter="travel">Travel</button>
+          </div>
+
           <div class="gallery-grid">
-            <button class="gallery-card tall" type="button" data-full="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80" data-title="Tumpak Sewu waterfall" aria-label="View Tumpak Sewu waterfall photo">
+            <button class="gallery-card tall" type="button" data-category="tumpak-sewu" data-full="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80" data-title="Tumpak Sewu waterfall" aria-label="View Tumpak Sewu waterfall photo">
               <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=900&q=80" alt="Tumpak Sewu waterfall" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Bromo sunrise" aria-label="View Bromo sunrise photo">
+            <button class="gallery-card" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Bromo sunrise" aria-label="View Bromo sunrise photo">
               <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Bromo sunrise" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=80" data-title="Mountain route" aria-label="View mountain route photo">
+            <button class="gallery-card" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=80" data-title="Mountain route" aria-label="View mountain route photo">
               <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" alt="Mountain route" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card wide" type="button" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Java nature scenery" aria-label="View Java nature scenery photo">
+            <button class="gallery-card wide" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Java nature scenery" aria-label="View Java nature scenery photo">
               <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Java nature scenery" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1400&q=80" data-title="Coastal travel experience" aria-label="View coastal travel experience photo">
+            <button class="gallery-card" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1400&q=80" data-title="Coastal travel experience" aria-label="View coastal travel experience photo">
               <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80" alt="Coastal travel experience" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Volcano trek" aria-label="View volcano trek photo">
+            <button class="gallery-card" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Volcano trek" aria-label="View volcano trek photo">
               <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Volcano trek" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Jungle trail" aria-label="View jungle trail photo">
+            <button class="gallery-card" type="button" data-category="ijen" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Jungle trail" aria-label="View jungle trail photo">
               <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Jungle trail" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80" data-title="Forest waterfall" aria-label="View forest waterfall photo">
+            <button class="gallery-card" type="button" data-category="tumpak-sewu" data-full="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80" data-title="Forest waterfall" aria-label="View forest waterfall photo">
               <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=900&q=80" alt="Forest waterfall" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=80" data-title="Sunrise journey" aria-label="View sunrise journey photo">
+            <button class="gallery-card" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=80" data-title="Sunrise journey" aria-label="View sunrise journey photo">
               <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Sunrise journey" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card tall" type="button" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Java highland" aria-label="View Java highland photo">
+            <button class="gallery-card tall" type="button" data-category="ijen" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Java highland" aria-label="View Java highland photo">
               <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Java highland" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Lake and mountain" aria-label="View lake and mountain photo">
+            <button class="gallery-card" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Lake and mountain" aria-label="View lake and mountain photo">
               <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Lake and mountain" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card wide" type="button" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=80" data-title="Java landscape" aria-label="View Java landscape photo">
+            <button class="gallery-card wide" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=80" data-title="Java landscape" aria-label="View Java landscape photo">
               <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80" alt="Java landscape" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
           </div>
         </div>
       </section>
+
+      <section class="section faq-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Frequently asked questions</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item active">
+              <button class="faq-question" type="button">What is included in the tour package?</button>
+              <div class="faq-answer">
+                <p>Most packages include private transport, driver, fuel, tickets, jeep, breakfast, local guide, mineral water, and selected support items as listed in each tour package.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">Can the tour start from Malang as well?</button>
+              <div class="faq-answer">
+                <p>Yes. Tours can start from Surabaya and also be arranged from Malang depending on your itinerary and hotel location.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">Can foreign guests book this package?</button>
+              <div class="faq-answer">
+                <p>Yes. The packages are designed for both international guests and Indonesian travelers, with English-friendly communication and customized assistance.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button">Do you offer private tours?</button>
+              <div class="faq-answer">
+                <p>Yes. Java Expedition offers private tours with flexible planning for families, couples, groups, or custom destination requests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <div class="gallery-modal" id="galleryModal" aria-hidden="true">

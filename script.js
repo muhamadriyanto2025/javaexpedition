@@ -216,6 +216,28 @@ const galleryModal = document.getElementById('galleryModal');
 const modalImage = document.getElementById('modalImage');
 const modalTitle = document.getElementById('modalTitle');
 const modalClose = document.getElementById('modalClose');
+const faqItems = document.querySelectorAll('.faq-item');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const galleryButtons = document.querySelectorAll('.gallery-card');
+
+// CMS-ready content model for easier future maintenance
+const packageCatalog = [
+  {
+    title: 'Bromo Midnight + Madakaripura',
+    price: 'IDR 2.000.000 / $112',
+    category: 'bromo'
+  },
+  {
+    title: 'Tumpak Sewu – Bromo – Ijen',
+    price: '$250 / IDR 4.500.000',
+    category: 'ijen'
+  },
+  {
+    title: 'Private Java Explorer',
+    price: 'Custom',
+    category: 'travel'
+  }
+];
 
 languageToggle.addEventListener('click', () => {
   currentLanguage.key = currentLanguage.key === 'en' ? 'id' : 'en';
@@ -227,7 +249,49 @@ themeToggle.addEventListener('click', () => {
   applyTheme(nextTheme);
 });
 
-const galleryButtons = document.querySelectorAll('.gallery-card');
+faqItems.forEach((item) => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+
+  if (item.classList.contains('active') && answer) {
+    answer.style.maxHeight = `${answer.scrollHeight}px`;
+  }
+
+  if (!question) return;
+
+  question.addEventListener('click', () => {
+    const isOpen = item.classList.contains('active');
+
+    faqItems.forEach((faqItem) => {
+      faqItem.classList.remove('active');
+      const answer = faqItem.querySelector('.faq-answer');
+      if (answer) {
+        answer.style.maxHeight = null;
+      }
+    });
+
+    if (!isOpen) {
+      item.classList.add('active');
+      const answer = item.querySelector('.faq-answer');
+      if (answer) {
+        answer.style.maxHeight = `${answer.scrollHeight}px`;
+      }
+    }
+  });
+});
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedFilter = button.dataset.filter;
+
+    filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+
+    galleryButtons.forEach((card) => {
+      const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+      card.classList.toggle('hidden', !shouldShow);
+    });
+  });
+});
 
 galleryButtons.forEach((button) => {
   button.addEventListener('click', () => {
@@ -267,6 +331,8 @@ document.addEventListener('keydown', (event) => {
     closeGalleryModal();
   }
 });
+
+console.info('JS content model ready for CMS migration:', packageCatalog.length, 'packages');
 
 const savedTheme = localStorage.getItem('travelTheme') || 'light';
 applyTheme(savedTheme);
