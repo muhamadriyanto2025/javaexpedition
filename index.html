@@ -27,7 +27,7 @@
     <header class="site-header">
       <div class="container nav">
         <div class="brand" aria-label="Java Expedition Logo">
-          <span class="brand-mark">J</span>
+          <img class="brand-logo" src="img/logo-java-expedition.jpeg" alt="Java Expedition logo" />
           <span>Java Expedition</span>
         </div>
 
@@ -116,8 +116,8 @@
             <div class="image-card image-main">
               <img
                 id="heroMainImage"
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
-                alt="Beach destination"
+                src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg"
+                alt="Java Bromo destination"
               />
             </div>
             <div class="floating-badge badge-top">
@@ -125,7 +125,7 @@
               <small data-i18n="badgeReview">Traveler rating</small>
             </div>
             <div class="floating-badge badge-bottom">
-              <span data-i18n="badgeTrip">Bali • Singapore • Europe</span>
+              <span data-i18n="badgeTrip">Bromo • Tumpak Sewu • Ijen</span>
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@
             <article class="travel-card">
               <div class="card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                  src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg"
                   alt="Bromo mountain view"
                 />
               </div>
@@ -184,7 +184,7 @@
             <article class="travel-card">
               <div class="card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                  src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(10).jpeg"
                   alt="Tumpak Sewu waterfall"
                 />
               </div>
@@ -205,8 +205,8 @@
             <article class="travel-card">
               <div class="card-image">
                 <img
-                  src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80"
-                  alt="Java expedition"
+                  src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(5).jpeg"
+                  alt="Java travel landscape"
                 />
               </div>
               <div class="card-body">
@@ -227,11 +227,11 @@
           <div class="package-detail-grid">
             <div class="detail-box">
               <h3 data-i18n="detailTitle">Main trip overview</h3>
-              <p data-i18n="detailText">From Surabaya: 4D3N Tumpak Sewu – Bromo – Ijen Blue Fire private tour. Finish in Bali or Surabaya according to your route preference.</p>
+              <p data-i18n="detailText">From Surabaya or Malang: 4D3N Tumpak Sewu – Bromo – Ijen Blue Fire private tour. Finish in Surabaya or Malang according to your route preference.</p>
             </div>
             <div class="detail-box accent-box">
               <h3 data-i18n="routeTitle">Route</h3>
-              <p data-i18n="routeText">Surabaya → Tumpak Sewu → Bromo sunrise → Ijen blue fire → Finish Bali / Surabaya</p>
+              <p data-i18n="routeText">Surabaya / Malang → Tumpak Sewu → Bromo sunrise → Ijen blue fire → Finish in Surabaya / Malang</p>
             </div>
           </div>
         </div>
@@ -239,16 +239,23 @@
 
       <section class="section package-detail-showcase" aria-labelledby="package-detail-title">
         <div class="container package-showcase-grid">
-          <div class="detail-visual">
+          <button
+            class="detail-visual media-clickable"
+            type="button"
+            data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg"
+            data-title="Java Explorer package"
+            aria-label="View Java Explorer package image"
+          >
             <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1100&q=80"
+              src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg"
               alt="Java hiking landscape with dramatic sunrise"
             />
+            <span class="media-preview-label">View photo</span>
             <div class="detail-badge">
               <span data-i18n="startsFrom">Starts from</span>
               <strong>IDR 4.500.000</strong>
             </div>
-          </div>
+          </button>
 
           <div class="detail-content">
             <p class="eyebrow" data-i18n="packageDetailEyebrow">Package detail</p>
@@ -262,7 +269,7 @@
               <li data-i18n="packageDetailItem1">Private vehicle with experienced local driver</li>
               <li data-i18n="packageDetailItem2">Sunrise Bromo jeep and waterfall trekking access</li>
               <li data-i18n="packageDetailItem3">Hotel support and local guide coordination</li>
-              <li data-i18n="packageDetailItem4">Flexible route to Surabaya or Bali finish</li>
+              <li data-i18n="packageDetailItem4">Flexible route with finish in Surabaya or Malang</li>
             </ul>
 
             <div class="detail-actions">
@@ -281,14 +288,22 @@
 
       <section class="section poster-section">
         <div class="container poster-grid">
-          <div class="poster-visual">
+          <button
+            class="poster-visual media-clickable"
+            type="button"
+            id="posterMainImageWrapper"
+            data-full="img/WhatsApp%20Image%202026-10-12%20at%2021.49.41.jpeg"
+            data-title="Java Expedition price poster"
+            aria-label="View Java Expedition price poster"
+          >
             <img
               id="posterMainImage"
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              src="img/WhatsApp%20Image%202026-10-12%20at%2021.49.41.jpeg"
               alt="Java Expedition price poster showing Bromo sunrise and Java adventure"
             />
+            <span class="media-preview-label">View photo</span>
             <div class="poster-tag" data-i18n="priceGuideTag">Java Travel Price Guide</div>
-          </div>
+          </button>
 
           <div class="poster-content">
             <p class="eyebrow" data-i18n="pricePosterEyebrow">Price poster</p>
@@ -329,16 +344,20 @@
 
       <section class="section rent-section" id="rent-car">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="rentCarEyebrow">Rent car</p>
-            <h2 data-i18n="rentCarHeading">Private car with driver for East Java travel</h2>
+          <div class="section-heading rent-brand-wrap">
+            <img class="rent-brand-logo" src="img/logo-rent-car.jpeg" alt="Rent car logo" />
+            <div>
+              <p class="eyebrow" data-i18n="rentCarEyebrow">Rent car</p>
+              <h2 data-i18n="rentCarHeading">Private car with driver for East Java travel</h2>
+            </div>
           </div>
 
           <div class="fleet-grid">
             <article class="fleet-card">
-              <div class="fleet-image">
+              <button class="fleet-image media-clickable" type="button" data-full="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=80" data-title="Avanza rental car" aria-label="View Avanza rental car photo">
                 <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80" alt="Avanza rental car" />
-              </div>
+                <span class="media-preview-label">View photo</span>
+              </button>
               <div class="fleet-body">
                 <h3 data-i18n="fleetAvanzaTitle">Avanza</h3>
                 <p data-i18n="fleetAvanzaText">Ideal for 4–5 passengers with comfortable city and route travel.</p>
@@ -351,9 +370,10 @@
             </article>
 
             <article class="fleet-card">
-              <div class="fleet-image">
+              <button class="fleet-image media-clickable" type="button" data-full="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=80" data-title="Innova rental car" aria-label="View Innova rental car photo">
                 <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=900&q=80" alt="Innova rental car" />
-              </div>
+                <span class="media-preview-label">View photo</span>
+              </button>
               <div class="fleet-body">
                 <h3 data-i18n="fleetInnovaTitle">Innova</h3>
                 <p data-i18n="fleetInnovaText">Comfortable option for families and medium-size groups.</p>
@@ -366,9 +386,10 @@
             </article>
 
             <article class="fleet-card">
-              <div class="fleet-image">
+              <button class="fleet-image media-clickable" type="button" data-full="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" data-title="Hiace commuter rental van" aria-label="View Hiace commuter rental van photo">
                 <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" alt="Hiace commuter rental van" />
-              </div>
+                <span class="media-preview-label">View photo</span>
+              </button>
               <div class="fleet-body">
                 <h3 data-i18n="fleetHiaceTitle">Hiace Commuter</h3>
                 <p data-i18n="fleetHiaceText">Best for family trips or a larger group needing extra luggage space.</p>
@@ -381,15 +402,16 @@
             </article>
 
             <article class="fleet-card">
-              <div class="fleet-image">
+              <button class="fleet-image media-clickable" type="button" data-full="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" data-title="Hiace Premio / Tourist Bus" aria-label="View Hiace Premio / Tourist Bus photo">
                 <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Hiace Premio and tourist bus" />
-              </div>
+                <span class="media-preview-label">View photo</span>
+              </button>
               <div class="fleet-body">
                 <h3 data-i18n="fleetHiacePremiumTitle">Hiace Premio / Tourist Bus</h3>
                 <p data-i18n="fleetHiacePremiumText">Premium travel arrangement for bigger groups and long-distance routes.</p>
                 <ul>
                   <li data-i18n="fleetHiacePremiumItem1">Include mobil + driver + BBM</li>
-                  <li data-i18n="fleetHiacePremiumItem2">For Java, Central Java, and Bali routes</li>
+                  <li data-i18n="fleetHiacePremiumItem2">For East Java tour routes including Bromo, Ijen, and Tumpak Sewu</li>
                   <li data-i18n="fleetHiacePremiumItem3">Tourist fleet for group and event travel</li>
                 </ul>
               </div>
@@ -407,7 +429,7 @@
             </div>
             <div class="detail-box accent-box">
               <h3 data-i18n="rentCarPolicyCoverageTitle">Coverage</h3>
-              <p data-i18n="rentCarPolicyCoverage">Destination coverage includes East Java, Central Java, and Bali only. All trips start from Surabaya, Malang, airport, hotel, or station.</p>
+              <p data-i18n="rentCarPolicyCoverage">Destination coverage focuses on East Java highlights including Bromo, Ijen, and Tumpak Sewu. All trips start from Surabaya, Malang, airport, hotel, or station.</p>
             </div>
           </div>
         </div>
@@ -423,20 +445,22 @@
           <div class="feature-grid">
             <div class="feature-box">
               <div class="icon">✈️</div>
-              <h3 data-i18n="featureOneTitle">International flights</h3>
-              <p data-i18n="featureOneText">Flight arrangements for leisure, business, and family travel with trusted partners.</p>
+              <h3 data-i18n="featureOneTitle">Private route support</h3>
+              <p data-i18n="featureOneText">Pickup coordination, route planning, and smooth transfer support across Bromo, Ijen, and Tumpak Sewu.</p>
             </div>
             <div class="feature-box">
               <div class="icon">🏨</div>
-              <h3 data-i18n="featureTwoTitle">Comfort accommodation</h3>
-              <p data-i18n="featureTwoText">Carefully selected hotels and stays that match your budget and travel style.</p>
+              <h3 data-i18n="featureTwoTitle">Stay near the route</h3>
+              <p data-i18n="featureTwoText">Comfortable lodging choices near the sunrise, waterfall, and crater areas for easier travel planning.</p>
             </div>
             <div class="feature-box">
               <div class="icon">🧭</div>
-              <h3 data-i18n="featureThreeTitle">Local guidance</h3>
-              <p data-i18n="featureThreeText">Expert recommendations and smooth logistics for a truly memorable trip.</p>
+              <h3 data-i18n="featureThreeTitle">Local guide & logistics</h3>
+              <p data-i18n="featureThreeText">Expert local guidance, practical support, and efficient planning for a memorable Java adventure.</p>
             </div>
           </div>
+
+          <div id="experiencePhotoGrid" class="experience-photo-grid" aria-label="Java Expedition experience photos"></div>
         </div>
       </section>
 
@@ -497,8 +521,8 @@
             </div>
             <div class="itinerary-card">
               <span class="day-chip">Day 4</span>
-              <h3 data-i18n="dayFourTitle">Finish in Bali or Surabaya</h3>
-              <p data-i18n="dayFourText">Transfer and departure according to your onward destination with support from the local travel team.</p>
+              <h3 data-i18n="dayFourTitle">Finish in Surabaya or Malang</h3>
+              <p data-i18n="dayFourText">Transfer and departure arranged according to your onward destination with support from the local travel team.</p>
             </div>
           </div>
         </div>
@@ -520,53 +544,53 @@
           </div>
 
           <div class="gallery-grid">
-            <button class="gallery-card tall" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Sunrise Bromo" aria-label="View Sunrise Bromo photo">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Sunrise Bromo" />
+            <button class="gallery-card tall" type="button" data-category="bromo" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg" data-title="Sunrise Bromo" aria-label="View Sunrise Bromo photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg" alt="Sunrise Bromo" />
               <span class="gallery-overlay"><span data-i18n="galleryViewPhoto">View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=80" data-title="Semeru and Bromo" aria-label="View Semeru and Bromo photo">
-              <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" alt="Semeru and Bromo" />
+            <button class="gallery-card" type="button" data-category="bromo" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(10).jpeg" data-title="Semeru and Bromo" aria-label="View Semeru and Bromo photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(10).jpeg" alt="Semeru and Bromo" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Bukit Teletubbies" aria-label="View Bukit Teletubbies photo">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Bukit Teletubbies" />
+            <button class="gallery-card" type="button" data-category="bromo" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(12).jpeg" data-title="Bukit Teletubbies" aria-label="View Bukit Teletubbies photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(12).jpeg" alt="Bukit Teletubbies" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card wide" type="button" data-category="bromo" data-full="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1400&q=80" data-title="Kawah Bromo" aria-label="View Kawah Bromo photo">
-              <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80" alt="Kawah Bromo" />
+            <button class="gallery-card wide" type="button" data-category="bromo" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(10).jpeg" data-title="Semeru and Bromo" aria-label="View Semeru and Bromo photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(10).jpeg" alt="Semeru and Bromo" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
 
-            <button class="gallery-card" type="button" data-category="tumpak-sewu" data-full="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80" data-title="Tumpak Sewu" aria-label="View Tumpak Sewu photo">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Tumpak Sewu" />
+            <button class="gallery-card" type="button" data-category="tumpak-sewu" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(8).jpeg" data-title="Tumpak Sewu" aria-label="View Tumpak Sewu photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(8).jpeg" alt="Tumpak Sewu" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="tumpak-sewu" data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80" data-title="Semeru View" aria-label="View Semeru view photo">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Semeru View" />
+            <button class="gallery-card" type="button" data-category="tumpak-sewu" data-full="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2820%29.jpeg" data-title="Semeru View" aria-label="View Semeru view photo">
+              <img src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2820%29.jpeg" alt="Semeru View" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="ijen" data-full="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1400&q=80" data-title="Kawah Ijen" aria-label="View Kawah Ijen photo">
-              <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80" alt="Kawah Ijen" />
+            <button class="gallery-card" type="button" data-category="ijen" data-full="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2819%29.jpeg" data-title="Kawah Ijen" aria-label="View Kawah Ijen photo">
+              <img src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2819%29.jpeg" alt="Kawah Ijen" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="ijen" data-full="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1400&q=80" data-title="Blue Fire Ijen" aria-label="View Blue Fire Ijen photo">
-              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Blue Fire Ijen" />
+            <button class="gallery-card" type="button" data-category="ijen" data-full="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2819%29.jpeg" data-title="Kawah Ijen" aria-label="View Kawah Ijen photo">
+              <img src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2819%29.jpeg" alt="Kawah Ijen" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1400&q=80" data-title="Madakaripura" aria-label="View Madakaripura photo">
-              <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80" alt="Madakaripura" />
+            <button class="gallery-card" type="button" data-category="travel" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(3).jpeg" data-title="Madakaripura" aria-label="View Madakaripura photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(3).jpeg" alt="Madakaripura" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1500622944204-abca6b4a6d14?auto=format&fit=crop&w=1400&q=80" data-title="Telaga Biru" aria-label="View Telaga Biru photo">
-              <img src="https://images.unsplash.com/photo-1500622944204-abca6b4a6d14?auto=format&fit=crop&w=900&q=80" alt="Telaga Biru" />
+            <button class="gallery-card" type="button" data-category="travel" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(5).jpeg" data-title="Telaga Biru" aria-label="View Telaga Biru photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(5).jpeg" alt="Telaga Biru" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card tall" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" data-title="Gua Tetes" aria-label="View Gua Tetes photo">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Gua Tetes" />
+            <button class="gallery-card tall" type="button" data-category="travel" data-full="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(7).jpeg" data-title="Gua Tetes" aria-label="View Gua Tetes photo">
+              <img src="img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(7).jpeg" alt="Gua Tetes" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
-            <button class="gallery-card wide" type="button" data-category="travel" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" data-title="Kapas Biru" aria-label="View Kapas Biru photo">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Kapas Biru" />
+            <button class="gallery-card wide" type="button" data-category="travel" data-full="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2841%29.jpeg" data-title="Kapas Biru" aria-label="View Kapas Biru photo">
+              <img src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.49.34/WhatsApp%20Image%202026-10-10%20at%2020.29.12%20%2841%29.jpeg" alt="Kapas Biru" />
               <span class="gallery-overlay"><span>View photo</span></span>
             </button>
           </div>
@@ -582,8 +606,8 @@
 
           <div class="video-grid">
             <article class="video-card">
-              <video controls preload="metadata" poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80">
-                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+              <video controls preload="metadata" poster="img/WhatsApp%20Unknown%202026-10-12%20at%2022.53.08/WhatsApp%20Image%202026-10-10%20at%2020.43.30%20%281%29.jpeg">
+                <source src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.53.08/WhatsApp%20Video%202026-10-10%20at%2020.43.30%20%281%29.mp4" type="video/mp4" />
               </video>
               <div class="video-copy">
                 <h3 data-i18n="videoBromoTitle">Bromo sunrise</h3>
@@ -591,8 +615,8 @@
               </div>
             </article>
             <article class="video-card">
-              <video controls preload="metadata" poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80">
-                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+              <video controls preload="metadata" poster="img/WhatsApp%20Unknown%202026-10-12%20at%2022.53.08/WhatsApp%20Image%202026-10-10%20at%2020.43.30%20%282%29.jpeg">
+                <source src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.53.08/WhatsApp%20Video%202026-10-10%20at%2020.43.30%20%282%29.mp4" type="video/mp4" />
               </video>
               <div class="video-copy">
                 <h3 data-i18n="videoTumpakTitle">Tumpak Sewu</h3>
@@ -600,8 +624,8 @@
               </div>
             </article>
             <article class="video-card">
-              <video controls preload="metadata" poster="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80">
-                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+              <video controls preload="metadata" poster="img/WhatsApp%20Unknown%202026-10-12%20at%2022.53.08/WhatsApp%20Image%202026-10-10%20at%2020.43.30.jpeg">
+                <source src="img/WhatsApp%20Unknown%202026-10-12%20at%2022.53.08/WhatsApp%20Video%202026-10-10%20at%2020.43.30.mp4" type="video/mp4" />
               </video>
               <div class="video-copy">
                 <h3 data-i18n="videoIjenTitle">Ijen blue fire</h3>
@@ -673,9 +697,9 @@
 
         <div class="contact-box">
           <h3 data-i18n="contactTitle">Contact us</h3>
-          <p>📍 Bali, Indonesia</p>
+          <p>📍 Surabaya, East Java, Indonesia</p>
           <p class="footer-whatsapp-number">📞 +62 852-3112-7887</p>
-          <p>✉️ hello@voyagehorizon.travel</p>
+          <p>✉️ yosua@gmail.com</p>
         </div>
 
         <div class="cta-box">

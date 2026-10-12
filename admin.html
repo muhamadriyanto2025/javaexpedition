@@ -337,6 +337,12 @@
         color: var(--primary);
       }
 
+      .tiny-note {
+        color: var(--muted);
+        font-size: 0.78rem;
+        margin-top: 6px;
+      }
+
       @media (max-width: 760px) {
         .admin-shell {
           padding-left: 12px;
@@ -511,16 +517,37 @@
           </div>
 
           <div class="panel card">
-            <h2>Foto Website</h2>
+            <h2>Foto Website & Poster Multibahasa</h2>
             <form id="siteAssetForm" class="auth-form">
               <div class="field">
-                <label for="heroImageUrl">URL foto hero</label>
-                <input id="heroImageUrl" type="url" placeholder="https://example.com/hero.jpg" required />
+                <label for="heroImageFile">Upload foto hero</label>
+                <input id="heroImageFile" type="file" accept="image/*" />
+                <input id="heroImageUrl" type="url" placeholder="https://example.com/hero.jpg" />
+                <small class="tiny-note">Bisa pakai file upload atau URL langsung.</small>
               </div>
 
               <div class="field">
-                <label for="posterImageUrl">URL foto poster</label>
-                <input id="posterImageUrl" type="url" placeholder="https://example.com/poster.jpg" required />
+                <label for="posterImageIdFile">Poster Indonesia</label>
+                <input id="posterImageIdFile" type="file" accept="image/*" />
+                <input id="posterImageIdUrl" type="url" placeholder="https://example.com/poster-id.jpg" />
+              </div>
+
+              <div class="field">
+                <label for="posterImageEnFile">Poster English</label>
+                <input id="posterImageEnFile" type="file" accept="image/*" />
+                <input id="posterImageEnUrl" type="url" placeholder="https://example.com/poster-en.jpg" />
+              </div>
+
+              <div class="field">
+                <label for="posterImageZhFile">Poster Mandarin</label>
+                <input id="posterImageZhFile" type="file" accept="image/*" />
+                <input id="posterImageZhUrl" type="url" placeholder="https://example.com/poster-zh.jpg" />
+              </div>
+
+              <div class="field">
+                <label for="posterImageJaFile">Poster Japanese</label>
+                <input id="posterImageJaFile" type="file" accept="image/*" />
+                <input id="posterImageJaUrl" type="url" placeholder="https://example.com/poster-ja.jpg" />
               </div>
 
               <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 10px;">Simpan Foto Website</button>
@@ -627,9 +654,9 @@
       ];
 
       const defaultGallery = [
-        { title: 'Sunrise Bromo', category: 'bromo', image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80' },
-        { title: 'Tumpak Sewu', category: 'tumpak-sewu', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80' },
-        { title: 'Blue Fire Ijen', category: 'ijen', image: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80' }
+        { title: 'Sunrise Bromo', category: 'bromo', image: 'img/WhatsApp%20Image%202026-10-12%20at%2019.10.38.jpeg' },
+        { title: 'Tumpak Sewu', category: 'tumpak-sewu', image: 'img/WhatsApp%20Image%202026-10-12%20at%2019.10.39%20(10).jpeg' },
+        { title: 'Blue Fire Ijen', category: 'ijen', image: 'img/WhatsApp%20Image%202026-10-12%20at%2021.49.41.jpeg' }
       ];
 
       function loadData(key, fallback) {
@@ -754,18 +781,54 @@
         refreshPreview();
       });
 
-      siteAssetForm.addEventListener('submit', (event) => {
+      function readFileAsDataUrl(file) {
+        return new Promise((resolve, reject) => {
+          if (!file || !file.type.startsWith('image/')) {
+            resolve('');
+            return;
+          }
+
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result || '');
+          reader.onerror = () => reject(new Error('Gagal membaca file gambar'));
+          reader.readAsDataURL(file);
+        });
+      }
+
+      async function handleSiteAssetSubmit(event) {
         event.preventDefault();
+
+        const heroFile = document.getElementById('heroImageFile').files[0];
+        const posterIdFile = document.getElementById('posterImageIdFile').files[0];
+        const posterEnFile = document.getElementById('posterImageEnFile').files[0];
+        const posterZhFile = document.getElementById('posterImageZhFile').files[0];
+        const posterJaFile = document.getElementById('posterImageJaFile').files[0];
+
+        const [heroImage, posterIdImage, posterEnImage, posterZhImage, posterJaImage] = await Promise.all([
+          readFileAsDataUrl(heroFile),
+          readFileAsDataUrl(posterIdFile),
+          readFileAsDataUrl(posterEnFile),
+          readFileAsDataUrl(posterZhFile),
+          readFileAsDataUrl(posterJaFile)
+        ]);
+
         const siteAssets = {
-          heroImage: document.getElementById('heroImageUrl').value.trim(),
-          posterImage: document.getElementById('posterImageUrl').value.trim()
+          heroImage: heroImage || document.getElementById('heroImageUrl').value.trim(),
+          posterImage: document.getElementById('posterImageEnUrl').value.trim() || document.getElementById('posterImageIdUrl').value.trim() || document.getElementById('posterImageZhUrl').value.trim() || document.getElementById('posterImageJaUrl').value.trim(),
+          posters: {
+            id: posterIdImage || document.getElementById('posterImageIdUrl').value.trim(),
+            en: posterEnImage || document.getElementById('posterImageEnUrl').value.trim(),
+            zh: posterZhImage || document.getElementById('posterImageZhUrl').value.trim(),
+            ja: posterJaImage || document.getElementById('posterImageJaUrl').value.trim()
+          }
         };
 
         saveData('travelSiteAssets', siteAssets);
-        document.getElementById('siteAssetStatus').textContent = 'Foto utama website berhasil disimpan.';
+        document.getElementById('siteAssetStatus').textContent = 'Poster dan foto website berhasil disimpan.';
         refreshPreview();
-        window.location.href = 'index.html';
-      });
+      }
+
+      siteAssetForm.addEventListener('submit', handleSiteAssetSubmit);
 
       galleryForm.addEventListener('submit', (event) => {
         event.preventDefault();
