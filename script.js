@@ -1,15 +1,16 @@
 const translations = {
   en: {
     brandName: 'Java Expedition',
-    navHome: 'Home',
-    navPackages: 'Packages',
+    navHome: 'Tour',
+    navRentCar: 'Rent Car',
+    navGallery: 'Gallery',
     navExperience: 'Experience',
     navWhyUs: 'Why Us',
     navContact: 'Contact',
     navButton: 'Book now',
     eyebrow: 'Trusted Java tour partner',
-    heroTitle: 'Java Expedition: Bromo, Tumpak Sewu, and Ijen adventure from Surabaya.',
-    heroSubtitle: 'Special tour packages for international guests and Indonesian travelers, with private transport, local guides, and unforgettable Java experiences.',
+    heroTitle: 'Java Expedition: Tour & Rent Car in East Java',
+    heroSubtitle: 'Volcano tours, waterfall adventures, private car rental with driver, and smooth travel support from Surabaya, Malang, airport, hotel, or station.',
     ctaPrimary: 'Plan my trip',
     ctaSecondary: 'See packages',
     metaDestinations: 'destinations',
@@ -75,19 +76,91 @@ const translations = {
     footerText: 'Travel with confidence, comfort, and a seamless experience for every destination.',
     contactTitle: 'Contact us',
     ctaFooter: 'Ready to start planning?',
-    whatsappButton: 'Chat on WhatsApp'
+    whatsappButton: 'Chat on WhatsApp',
+    rentCarEyebrow: 'Rent car',
+    rentCarHeading: 'Private car with driver for East Java travel',
+    rentCarPolicyBookingTitle: 'Tour booking policy',
+    rentCarPolicyBooking: 'Booking order tour: DP 50% and final payment on pick-up day.',
+    rentCarPolicyRentalTitle: 'Rental car policy',
+    rentCarPolicyRental: 'Available for daily rental with driver and fuel. Tolls and parking are excluded. Lateness / extra waiting can be charged by time.',
+    rentCarPolicyCoverageTitle: 'Coverage',
+    rentCarPolicyCoverage: 'Destination coverage includes East Java, Central Java, and Bali only. All trips start from Surabaya, Malang, airport, hotel, or station.',
+    pricePosterEyebrow: 'Price poster',
+    pricePosterHeading: 'Choose a route that matches your travel style',
+    pricePosterText: 'From volcanic sunrise to waterfalls and blue fire adventure, each package is built for comfort, private service, and smooth logistics.',
+    pricePosterBromo: 'Bromo + Madakaripura',
+    pricePosterTumpak: 'Tumpak Sewu + Bromo + Ijen',
+    pricePosterCustom: 'Private Java Explorer',
+    priceGuideTag: 'Java Travel Price Guide',
+    galleryFilterAll: 'All',
+    galleryFilterBromo: 'Bromo',
+    galleryFilterTumpak: 'Tumpak Sewu',
+    galleryFilterIjen: 'Ijen',
+    galleryFilterTravel: 'Travel',
+    galleryViewPhoto: 'View photo',
+    galleryModalCaption: 'Explore the beauty of East Java',
+    startsFrom: 'Starts from',
+    fleetAvanzaTitle: 'Avanza',
+    fleetAvanzaText: 'Ideal for 4–5 passengers with comfortable city and route travel.',
+    fleetAvanzaItem1: 'Include mobil + driver + BBM',
+    fleetAvanzaItem2: 'Start from Surabaya / Malang / airport / hotel',
+    fleetAvanzaItem3: 'Self-drive not available',
+    fleetInnovaTitle: 'Innova',
+    fleetInnovaText: 'Comfortable option for families and medium-size groups.',
+    fleetInnovaItem1: 'Include mobil + driver + BBM',
+    fleetInnovaItem2: 'Suitable for tourist routes across Java',
+    fleetInnovaItem3: 'Available for daily rental and custom itinerary',
+    fleetHiaceTitle: 'Hiace Commuter',
+    fleetHiaceText: 'Best for family trips or a larger group needing extra luggage space.',
+    fleetHiaceItem1: 'Include mobil + driver + BBM',
+    fleetHiaceItem2: 'Good for group tours and airport transfer',
+    fleetHiaceItem3: 'Daily rental available',
+    fleetHiacePremiumTitle: 'Hiace Premio / Tourist Bus',
+    fleetHiacePremiumText: 'Premium travel arrangement for bigger groups and long-distance routes.',
+    fleetHiacePremiumItem1: 'Include mobil + driver + BBM',
+    fleetHiacePremiumItem2: 'For Java, Central Java, and Bali routes',
+    fleetHiacePremiumItem3: 'Tourist fleet for group and event travel',
+    videoBromoTitle: 'Bromo sunrise',
+    videoBromoText: 'Short cinematic moment from the volcanic sunrise.',
+    videoTumpakTitle: 'Tumpak Sewu',
+    videoTumpakText: 'Chasing the waterfall angle and mountain silhouette.',
+    videoIjenTitle: 'Ijen blue fire',
+    videoIjenText: 'Short night trek impression for a dramatic highlight.',
+    askForPrice: 'Ask for price',
+    packageDetailEyebrow: 'Package detail',
+    packageDetailHeading: 'Java Explorer 4 Days 3 Nights',
+    packageDetailText: 'Designed for travelers who want a premium and comfortable Java adventure with private transport, flexible timing, and local support from start to finish.',
+    packageDetailItem1: 'Private vehicle with experienced local driver',
+    packageDetailItem2: 'Sunrise Bromo jeep and waterfall trekking access',
+    packageDetailItem3: 'Hotel support and local guide coordination',
+    packageDetailItem4: 'Flexible route to Surabaya or Bali finish',
+    travelerStoriesEyebrow: 'Traveler stories',
+    travelerStoriesTitle: 'Guests remember this trip for the feeling, not just the views',
+    shortVideoEyebrow: 'Short video',
+    shortVideoTitle: 'Moment highlights to make the trip feel real',
+    faqEyebrow: 'FAQ',
+    faqHeading: 'Frequently asked questions',
+    faqQuestion1: 'What is included in the tour package?',
+    faqAnswer1: 'Most packages include private transport, driver, fuel, tickets, jeep, breakfast, local guide, mineral water, and selected support items as listed in each tour package.',
+    faqQuestion2: 'Can the tour start from Malang as well?',
+    faqAnswer2: 'Yes. Tours can start from Surabaya and also be arranged from Malang depending on your itinerary and hotel location.',
+    faqQuestion3: 'Can foreign guests book this package?',
+    faqAnswer3: 'Yes. The packages are designed for both international guests and Indonesian travelers, with English-friendly communication and customized assistance.',
+    faqQuestion4: 'Do you offer private tours?',
+    faqAnswer4: 'Yes. Java Expedition offers private tours with flexible planning for families, couples, groups, or custom destination requests.'
   },
   id: {
     brandName: 'Java Expedition',
-    navHome: 'Beranda',
-    navPackages: 'Paket',
+    navHome: 'Wisata',
+    navRentCar: 'Sewa Mobil',
+    navGallery: 'Galeri',
     navExperience: 'Pengalaman',
     navWhyUs: 'Kenapa Kami',
     navContact: 'Kontak',
     navButton: 'Pesan sekarang',
     eyebrow: 'Mitra tour Java terpercaya',
-    heroTitle: 'Java Expedition: Petualangan Bromo, Tumpak Sewu, dan Ijen dari Surabaya.',
-    heroSubtitle: 'Paket tour khusus untuk tamu mancanegara dan traveler Indonesia, dengan transportasi privat, pemandu lokal, dan pengalaman Jawa yang tak terlupakan.',
+    heroTitle: 'Java Expedition: Wisata & Sewa Mobil di Jawa Timur',
+    heroSubtitle: 'Tour gunung, petualangan air terjun, rental mobil dengan supir, dan dukungan perjalanan yang lancar dari Surabaya, Malang, bandara, hotel, atau stasiun.',
     ctaPrimary: 'Rencanakan trip',
     ctaSecondary: 'Lihat paket',
     metaDestinations: 'destinasi',
@@ -153,7 +226,378 @@ const translations = {
     footerText: 'Berjalanlah dengan percaya diri, nyaman, dan pengalaman yang mulus untuk setiap destinasi.',
     contactTitle: 'Hubungi kami',
     ctaFooter: 'Siap mulai merencanakan?',
-    whatsappButton: 'Chat WhatsApp'
+    whatsappButton: 'Chat WhatsApp',
+    rentCarEyebrow: 'Sewa mobil',
+    rentCarHeading: 'Mobil pribadi dengan supir untuk perjalanan Jawa Timur',
+    rentCarPolicyBookingTitle: 'Kebijakan pemesanan tour',
+    rentCarPolicyBooking: 'Booking order tour: DP 50% dan pembayaran akhir saat hari pick-up.',
+    rentCarPolicyRentalTitle: 'Kebijakan rental mobil',
+    rentCarPolicyRental: 'Tersedia rental harian dengan driver dan bahan bakar. Tol dan parkir tidak termasuk. Keterlambatan / menunggu tambahan bisa dikenakan biaya per waktu.',
+    rentCarPolicyCoverageTitle: 'Cakupan',
+    rentCarPolicyCoverage: 'Cakupan destinasi mencakup Jawa Timur, Jawa Tengah, dan Bali saja. Semua perjalanan berangkat dari Surabaya, Malang, bandara, hotel, atau stasiun.',
+    pricePosterEyebrow: 'Poster harga',
+    pricePosterHeading: 'Pilih rute yang sesuai dengan gaya perjalanan Anda',
+    pricePosterText: 'Dari sunrise gunung hingga air terjun dan petualangan blue fire, setiap paket dibuat untuk kenyamanan, layanan privat, dan logistik yang lancar.',
+    pricePosterBromo: 'Bromo + Madakaripura',
+    pricePosterTumpak: 'Tumpak Sewu + Bromo + Ijen',
+    pricePosterCustom: 'Private Java Explorer',
+    priceGuideTag: 'Panduan Harga Travel Java',
+    galleryFilterAll: 'Semua',
+    galleryFilterBromo: 'Bromo',
+    galleryFilterTumpak: 'Tumpak Sewu',
+    galleryFilterIjen: 'Ijen',
+    galleryFilterTravel: 'Travel',
+    galleryViewPhoto: 'Lihat foto',
+    galleryModalCaption: 'Jelajahi keindahan Jawa Timur',
+    startsFrom: 'Mulai dari',
+    fleetAvanzaTitle: 'Avanza',
+    fleetAvanzaText: 'Cocok untuk 4–5 penumpang dengan perjalanan kota dan rute yang nyaman.',
+    fleetAvanzaItem1: 'Termasuk mobil + sopir + BBM',
+    fleetAvanzaItem2: 'Mulai dari Surabaya / Malang / bandara / hotel',
+    fleetAvanzaItem3: 'Tidak tersedia self-drive',
+    fleetInnovaTitle: 'Innova',
+    fleetInnovaText: 'Pilihan nyaman untuk keluarga dan kelompok berukuran medium.',
+    fleetInnovaItem1: 'Termasuk mobil + sopir + BBM',
+    fleetInnovaItem2: 'Cocok untuk rute wisata di seluruh Jawa',
+    fleetInnovaItem3: 'Tersedia rental harian dan itinerary kustom',
+    fleetHiaceTitle: 'Hiace Commuter',
+    fleetHiaceText: 'Paling cocok untuk perjalanan keluarga atau grup besar dengan kebutuhan bagasi lebih banyak.',
+    fleetHiaceItem1: 'Termasuk mobil + sopir + BBM',
+    fleetHiaceItem2: 'Cocok untuk tour grup dan transfer bandara',
+    fleetHiaceItem3: 'Rental harian tersedia',
+    fleetHiacePremiumTitle: 'Hiace Premio / Tourist Bus',
+    fleetHiacePremiumText: 'Pengaturan perjalanan premium untuk grup lebih besar dan rute jarak jauh.',
+    fleetHiacePremiumItem1: 'Termasuk mobil + sopir + BBM',
+    fleetHiacePremiumItem2: 'Untuk rute Jawa, Jawa Tengah, dan Bali',
+    fleetHiacePremiumItem3: 'Armada wisata untuk perjalanan grup dan event',
+    videoBromoTitle: 'Sunrise Bromo',
+    videoBromoText: 'Momen sinematik singkat dari sunrise gunung berapi.',
+    videoTumpakTitle: 'Tumpak Sewu',
+    videoTumpakText: 'Mengejar sudut air terjun dan siluet pegunungan.',
+    videoIjenTitle: 'Blue fire Ijen',
+    videoIjenText: 'Kesan singkat dari pendakian malam yang dramatis.',
+    askForPrice: 'Tanya harga',
+    packageDetailEyebrow: 'Detail paket',
+    packageDetailHeading: 'Java Explorer 4 Hari 3 Malam',
+    packageDetailText: 'Dirancang untuk traveler yang ingin menikmati petualangan Jawa yang premium dan nyaman dengan transportasi pribadi, jadwal fleksibel, dan dukungan lokal dari awal hingga akhir.',
+    packageDetailItem1: 'Mobil pribadi dengan sopir lokal berpengalaman',
+    packageDetailItem2: 'Jeep sunrise Bromo dan akses trekking air terjun',
+    packageDetailItem3: 'Dukungan hotel dan koordinasi pemandu lokal',
+    packageDetailItem4: 'Rute fleksibel untuk selesai di Surabaya atau Bali',
+    travelerStoriesEyebrow: 'Cerita traveler',
+    travelerStoriesTitle: 'Tamu mengingat trip ini bukan hanya pemandangannya, tapi juga rasanya',
+    shortVideoEyebrow: 'Video singkat',
+    shortVideoTitle: 'Highlight momen yang membuat trip terasa nyata',
+    faqEyebrow: 'FAQ',
+    faqHeading: 'Pertanyaan yang sering diajukan',
+    faqQuestion1: 'Apa yang termasuk dalam paket tour?',
+    faqAnswer1: 'Sebagian besar paket mencakup transportasi pribadi, sopir, BBM, tiket, jeep, sarapan, pemandu lokal, air mineral, serta item pendukung yang tercantum pada tiap paket.',
+    faqQuestion2: 'Apakah tour bisa dimulai dari Malang juga?',
+    faqAnswer2: 'Bisa. Tour dapat dimulai dari Surabaya dan juga diatur dari Malang tergantung rute dan lokasi hotel Anda.',
+    faqQuestion3: 'Apakah tamu asing bisa memesan paket ini?',
+    faqAnswer3: 'Bisa. Paket dirancang untuk tamu internasional dan traveler Indonesia, dengan komunikasi yang ramah dan bantuan sesuai kebutuhan.',
+    faqQuestion4: 'Apakah tersedia tour privat?',
+    faqAnswer4: 'Ya. Java Expedition menawarkan tour privat dengan perencanaan fleksibel untuk keluarga, pasangan, grup, atau permintaan destinasi khusus.'
+  },
+  zh: {
+    brandName: 'Java Expedition',
+    navHome: '旅游',
+    navRentCar: '租车',
+    navGallery: '相册',
+    navExperience: '体验',
+    navWhyUs: '为什么选择我们',
+    navContact: '联系',
+    navButton: '立即预订',
+    eyebrow: '值得信赖的爪哇旅游伙伴',
+    heroTitle: 'Java Expedition：东爪哇旅游与租车服务',
+    heroSubtitle: '火山之旅、瀑布探险、带司机的私人租车，以及从泗水、玛琅、机场、酒店或车站出发的顺畅旅行支持。',
+    ctaPrimary: '计划我的行程',
+    ctaSecondary: '查看套餐',
+    metaDestinations: '目的地',
+    metaClients: '快乐旅行者',
+    metaSupport: '支持',
+    badgeReview: '旅行者评分',
+    badgeTrip: '巴厘岛 • 新加坡 • 欧洲',
+    statYears: '年经验',
+    statResponse: '快速咨询',
+    statCustom: '定制行程',
+    statService: '私人服务',
+    sectionTag: '精选套餐',
+    packageHeading: '从泗水和玛琅出发的爪哇探险之旅',
+    packageOneTitle: '布罗莫午夜 + 马达卡里普拉',
+    packageOneText: '从泗水出发，结合私家火山体验与瀑布探险的一日游式旅行。',
+    packageOneItem1: '私人车 + 司机 + 油费',
+    packageOneItem2: '吉普车、门票、早餐、当地导游',
+    packageOneItem3: '摩托车接送 + 矿泉水',
+    packageTwoTitle: 'Tumpak Sewu – Bromo – Ijen',
+    packageTwoText: '4天3晚私人团，包含瀑布、火山日出和 Ijen 蓝火，提供住宿支持。',
+    packageTwoItem1: '交通、司机、油费、过路费、停车费',
+    packageTwoItem2: '门票、吉普车、早餐、当地导游',
+    packageTwoItem3: '酒店、口罩、健康证明、矿泉水',
+    packageThreeTitle: '私人 Java Explorer',
+    packageThreeText: '为外国游客、家庭、情侣或团队提供灵活的东爪哇探索行程规划。',
+    packageThreeItem1: '从泗水或玛琅出发',
+    packageThreeItem2: '定制行程与私人协助',
+    packageThreeItem3: '友好的当地旅行支持',
+    detailTitle: '主要行程概览',
+    detailText: '从泗水出发：4天3晚 Tumpak Sewu – Bromo – Ijen Blue Fire 私人旅程。可按路线选择在巴厘岛或泗水结束。',
+    routeTitle: '路线',
+    routeText: '泗水 → Tumpak Sewu → Bromo 日出 → Ijen 蓝火 → 巴厘岛 / 泗水结束',
+    experienceTag: '旅行体验',
+    experienceHeading: '从开始到结束都轻松无忧的旅程',
+    featureOneTitle: '国际航班',
+    featureOneText: '为休闲、商务和家庭旅行安排可靠的航班合作。',
+    featureTwoTitle: '舒适住宿',
+    featureTwoText: '根据预算和旅行风格精心挑选酒店与住宿。',
+    featureThreeTitle: '当地导览',
+    featureThreeText: '专业建议和顺畅的行程安排，让旅程更加难忘。',
+    whyTag: '为何选择我们',
+    whyHeading: '我们让旅行简单、个性化且无压力。',
+    whyText: '无论是家庭假期、商务差旅还是海外梦想旅行，我们都专注于最重要的细节。',
+    whyItem1: '个性化行程规划',
+    whyItem2: '透明价格与诚实建议',
+    whyItem3: '旅行前后都能得到友好支持',
+    panelLabel: '快速响应',
+    panelLabel2: '最佳价值',
+    panelText: '平均咨询时间',
+    panelText2: '适合各预算的套餐',
+    reviewTag: '行程',
+    reviewHeading: '4天3晚探险行程',
+    dayOneTitle: '泗水至 Tumpak Sewu',
+    dayOneText: '从泗水或玛琅出发，沿途风景优美，瀑布徒步，随后在附近地区休息。',
+    dayTwoTitle: 'Bromo 日出',
+    dayTwoText: '清晨赶往 Bromo 观看日出，欣赏火山景观，并享受吉普车私家接送带来的难忘体验。',
+    dayThreeTitle: 'Ijen 蓝火',
+    dayThreeText: '夜间前往 Ijen 火山口，观赏蓝火，并在日出前返回休息。',
+    dayFourTitle: '在巴厘岛或泗水结束',
+    dayFourText: '根据您的下一站目的地安排接送和离境，享有当地团队支持。',
+    galleryTag: '旅行相册',
+    galleryHeading: '爪哇探险体验',
+    footerText: '以安全、舒适和顺畅的方式开启每一段旅程。',
+    contactTitle: '联系我们',
+    ctaFooter: '准备好开始规划了吗？',
+    whatsappButton: 'WhatsApp 聊天',
+    rentCarEyebrow: '租车',
+    rentCarHeading: '东爪哇私人司机租车服务',
+    rentCarPolicyBookingTitle: '旅游预订政策',
+    rentCarPolicyBooking: '预订旅行套餐：首付 50%，余款在接送当天支付。',
+    rentCarPolicyRentalTitle: '租车政策',
+    rentCarPolicyRental: '提供带司机和油费的每日租车服务。过路费和停车费不含。迟到或额外等待按时间收费。',
+    rentCarPolicyCoverageTitle: '覆盖范围',
+    rentCarPolicyCoverage: '覆盖范围包括东爪哇、中爪哇和巴厘岛。所有行程均从泗水、玛琅、机场、酒店或车站出发。',
+    pricePosterEyebrow: '价格海报',
+    pricePosterHeading: '选择适合您旅行风格的路线',
+    pricePosterText: '从火山日出到瀑布与蓝火探险，每个套餐都注重舒适、私人服务和顺畅安排。',
+    pricePosterBromo: 'Bromo + Madakaripura',
+    pricePosterTumpak: 'Tumpak Sewu + Bromo + Ijen',
+    pricePosterCustom: '私人 Java Explorer',
+    priceGuideTag: 'Java 旅行价格指南',
+    galleryFilterAll: '全部',
+    galleryFilterBromo: 'Bromo',
+    galleryFilterTumpak: 'Tumpak Sewu',
+    galleryFilterIjen: 'Ijen',
+    galleryFilterTravel: '旅行',
+    galleryViewPhoto: '查看照片',
+    galleryModalCaption: '探索东爪哇的美景',
+    startsFrom: '起价',
+    fleetAvanzaTitle: 'Avanza',
+    fleetAvanzaText: '适合 4–5 位乘客，适合城市和线路旅行。',
+    fleetAvanzaItem1: '包含车 + 司机 + 油费',
+    fleetAvanzaItem2: '从泗水 / 玛琅 / 机场 / 酒店出发',
+    fleetAvanzaItem3: '不提供自驾',
+    fleetInnovaTitle: 'Innova',
+    fleetInnovaText: '适合家庭和中型团体的舒适选择。',
+    fleetInnovaItem1: '包含车 + 司机 + 油费',
+    fleetInnovaItem2: '适合爪哇各地旅游路线',
+    fleetInnovaItem3: '提供每日租车和定制行程',
+    fleetHiaceTitle: 'Hiace Commuter',
+    fleetHiaceText: '最适合家庭旅行或需要更多行李空间的较大团体。',
+    fleetHiaceItem1: '包含车 + 司机 + 油费',
+    fleetHiaceItem2: '适合团体旅游和机场接送',
+    fleetHiaceItem3: '支持日租',
+    fleetHiacePremiumTitle: 'Hiace Premio / Tourist Bus',
+    fleetHiacePremiumText: '适合大团体和长途路线的优质出行安排。',
+    fleetHiacePremiumItem1: '包含车 + 司机 + 油费',
+    fleetHiacePremiumItem2: '覆盖爪哇、中爪哇和巴厘岛路线',
+    fleetHiacePremiumItem3: '适合团体旅行和活动接送',
+    videoBromoTitle: 'Bromo 日出',
+    videoBromoText: '火山日出的短片级电影感瞬间。',
+    videoTumpakTitle: 'Tumpak Sewu',
+    videoTumpakText: '追逐瀑布的拍摄角度和山脊轮廓。',
+    videoIjenTitle: 'Ijen 蓝火',
+    videoIjenText: '戏剧性夜间徒步的短暂印象。',
+    askForPrice: '询问价格',
+    packageDetailEyebrow: '套餐详情',
+    packageDetailHeading: 'Java Explorer 4天3晚',
+    packageDetailText: '专为追求高品质、舒适度与私人化服务的爪哇探险旅客设计，包含私人交通、灵活时间安排和全程本地协助。',
+    packageDetailItem1: '配备经验丰富的本地司机的私人车辆',
+    packageDetailItem2: 'Bromo 日出 Jeep 和瀑布徒步入场',
+    packageDetailItem3: '酒店支持与当地导游协调',
+    packageDetailItem4: '可按路线选择在泗水或巴厘岛结束',
+    travelerStoriesEyebrow: '旅行者故事',
+    travelerStoriesTitle: '客人记住的不是单纯的风景，而是那种感受',
+    shortVideoEyebrow: '短视频',
+    shortVideoTitle: '让旅程看起来更真实的瞬间亮点',
+    faqEyebrow: '常见问题',
+    faqHeading: '常见问题',
+    faqQuestion1: '旅行套餐包含什么？',
+    faqAnswer1: '大多数套餐包含私人交通、司机、油费、门票、吉普车、早餐、当地导游、矿泉水，以及每个套餐列明的支持项目。',
+    faqQuestion2: '旅游也可以从玛琅出发吗？',
+    faqAnswer2: '可以。根据您的行程和酒店位置，旅行也可以从玛琅出发。',
+    faqQuestion3: '外国游客可以预订吗？',
+    faqAnswer3: '可以。我们的套餐适合国际游客和印尼游客，并提供英文沟通与定制协助。',
+    faqQuestion4: '是否提供私人团？',
+    faqAnswer4: '可以。Java Expedition 提供私人团，并可根据家庭、情侣、团体或自定义目的地进行灵活安排。'
+  },
+  ja: {
+    brandName: 'Java Expedition',
+    navHome: 'ツアー',
+    navRentCar: 'レンタカー',
+    navGallery: 'ギャラリー',
+    navExperience: '体験',
+    navWhyUs: '理由',
+    navContact: 'お問い合わせ',
+    navButton: '今すぐ予約',
+    eyebrow: '信頼できるジャワ旅行パートナー',
+    heroTitle: 'Java Expedition：東ジャワのツアー＆レンタカー',
+    heroSubtitle: '火山ツアー、滝体験、専属ドライバー付きの車レンタル、スラバヤやマラン、空港、ホテル、駅からのスムーズな移動サポート。',
+    ctaPrimary: '旅行を計画する',
+    ctaSecondary: 'パッケージを見る',
+    metaDestinations: '目的地',
+    metaClients: '満足した旅行者',
+    metaSupport: 'サポート',
+    badgeReview: '旅行者評価',
+    badgeTrip: 'バリ • シンガポール • ヨーロッパ',
+    statYears: '年の経験',
+    statResponse: '迅速な相談',
+    statCustom: 'カスタム旅行',
+    statService: '個別サービス',
+    sectionTag: 'おすすめパッケージ',
+    packageHeading: 'スラバヤとマラン発のジャワ冒険ツアー',
+    packageOneTitle: 'ブロモ深夜 + マダカリプラ',
+    packageOneText: 'スラバヤ発で、火山体験と滝探険を組み合わせたプライベート旅行。',
+    packageOneItem1: '専用車 + ドライバー + 燃料',
+    packageOneItem2: 'ジープ、入場券、朝食、現地ガイド',
+    packageOneItem3: 'バイク送迎 + ミネラルウォーター',
+    packageTwoTitle: 'Tumpak Sewu – Bromo – Ijen',
+    packageTwoText: '4日3泊のプライベートツアー。滝、火山の日の出、Ijenのブルーファイアを含む。',
+    packageTwoItem1: '交通、ドライバー、燃料、通行料、駐車場',
+    packageTwoItem2: '入場券、ジープ、朝食、現地ガイド',
+    packageTwoItem3: 'ホテル、マスク、健康証明、ミネラルウォーター',
+    packageThreeTitle: 'Private Java Explorer',
+    packageThreeText: '外国人旅行者、家族、カップル、団体向けに柔軟に設計された東ジャワ探訪プラン。',
+    packageThreeItem1: 'スラバヤまたはマラン発',
+    packageThreeItem2: 'カスタム行程と個別サポート',
+    packageThreeItem3: '親切な現地サポート',
+    detailTitle: 'メイン旅行概要',
+    detailText: 'スラバヤ発：4日3泊 Tumpak Sewu – Bromo – Ijen Blue Fire プライベートツアー。ルートに応じてバリまたはスラバヤで終了。',
+    routeTitle: 'ルート',
+    routeText: 'スラバヤ → Tumpak Sewu → Bromo 日の出 → Ijen ブルーファイア → バリ / スラバヤで終了',
+    experienceTag: '旅行体験',
+    experienceHeading: '最初から最後まで快適な旅',
+    featureOneTitle: '国際線',
+    featureOneText: 'レジャー、ビジネス、家族旅行向けの信頼できる航空手配。',
+    featureTwoTitle: '快適な宿泊',
+    featureTwoText: '予算や旅行スタイルに合わせて厳選したホテルと宿泊先。',
+    featureThreeTitle: '現地ガイド',
+    featureThreeText: '専門的なアドバイスとスムーズな物流で忘れられない旅をサポート。',
+    whyTag: 'なぜ選ぶのか',
+    whyHeading: '旅行をシンプルで、パーソナルで、ストレスフリーにします。',
+    whyText: '家族旅行、ビジネス出張、海外の夢の旅行など、私たちは最も大切な細部に集中します。',
+    whyItem1: 'パーソナルな旅行計画',
+    whyItem2: '透明な価格と誠実なアドバイス',
+    whyItem3: '旅行前後を含む丁寧なサポート',
+    panelLabel: '迅速対応',
+    panelLabel2: '最高の価値',
+    panelText: '平均相談時間',
+    panelText2: 'あらゆる予算向けのパッケージ',
+    reviewTag: '日程',
+    reviewHeading: '4日3泊の冒険日程',
+    dayOneTitle: 'スラバヤから Tumpak Sewu',
+    dayOneText: 'スラバヤまたはマラン発、絶景のドライブ、滝トレッキング、近くの地域での宿泊。',
+    dayTwoTitle: 'Bromo の日の出',
+    dayTwoText: '早朝に Bromo の日の出を見て、火山の景観と専用ジープでの思い出に残る体験。',
+    dayThreeTitle: 'Ijen ブルーファイア',
+    dayThreeText: 'Kawah Ijen への夜間トレッキング、ブルーファイア、硫黄の火口の日の出。',
+    dayFourTitle: 'バリまたはスラバヤで終了',
+    dayFourText: '次の目的地に応じて送迎と出発を手配し、現地チームがサポートします。',
+    galleryTag: 'トリップギャラリー',
+    galleryHeading: 'ジャワ冒険の瞬間',
+    footerText: 'どの目的地でも、自信と快適さを持って旅を楽しめるように。',
+    contactTitle: 'お問い合わせ',
+    ctaFooter: '計画を始める準備はできましたか？',
+    whatsappButton: 'WhatsAppで相談',
+    rentCarEyebrow: 'レンタカー',
+    rentCarHeading: '東ジャワの専用ドライバー付き車レンタル',
+    rentCarPolicyBookingTitle: 'ツアー予約ポリシー',
+    rentCarPolicyBooking: 'ツアー予約：初回の 50% を前払いし、残金は当日受け取り時に支払います。',
+    rentCarPolicyRentalTitle: 'レンタカーポリシー',
+    rentCarPolicyRental: 'ドライバーと燃料付きの日割りレンタカーを提供します。通行料と駐車場代は別途です。遅刻や待機時間は時間単位で追加料金が発生します。',
+    rentCarPolicyCoverageTitle: '対象範囲',
+    rentCarPolicyCoverage: '対象エリアは東ジャワ、中ジャワ、バリです。すべてスラバヤ、マラン、空港、ホテル、駅発の旅行です。',
+    pricePosterEyebrow: '価格表',
+    pricePosterHeading: '旅行スタイルに合うルートを選ぶ',
+    pricePosterText: '火山の日の出から滝、ブルーファイアまで、各パッケージは快適さと私的サービス、スムーズな手配を重視しています。',
+    pricePosterBromo: 'Bromo + Madakaripura',
+    pricePosterTumpak: 'Tumpak Sewu + Bromo + Ijen',
+    pricePosterCustom: 'Private Java Explorer',
+    priceGuideTag: 'Java 旅行価格ガイド',
+    galleryFilterAll: 'すべて',
+    galleryFilterBromo: 'Bromo',
+    galleryFilterTumpak: 'Tumpak Sewu',
+    galleryFilterIjen: 'Ijen',
+    galleryFilterTravel: '旅行',
+    galleryViewPhoto: '写真を見る',
+    galleryModalCaption: '東ジャワの美しさを体験',
+    startsFrom: '開始価格',
+    fleetAvanzaTitle: 'Avanza',
+    fleetAvanzaText: '4〜5名向けで、街中やルート移動に快適です。',
+    fleetAvanzaItem1: '車 + ドライバー + 燃料付き',
+    fleetAvanzaItem2: 'スラバヤ / マラン / 空港 / ホテル発',
+    fleetAvanzaItem3: '自分で運転するサービスはありません',
+    fleetInnovaTitle: 'Innova',
+    fleetInnovaText: '家族や中規模グループにおすすめの快適な選択肢です。',
+    fleetInnovaItem1: '車 + ドライバー + 燃料付き',
+    fleetInnovaItem2: 'ジャワ全域の観光ルートに適しています',
+    fleetInnovaItem3: '日割りレンタルとカスタム旅行に対応',
+    fleetHiaceTitle: 'Hiace Commuter',
+    fleetHiaceText: '家族旅行や大きな荷物があるグループに最適です。',
+    fleetHiaceItem1: '車 + ドライバー + 燃料付き',
+    fleetHiaceItem2: '団体ツアーや空港送迎に適しています',
+    fleetHiaceItem3: '日割りレンタルあり',
+    fleetHiacePremiumTitle: 'Hiace Premio / Tourist Bus',
+    fleetHiacePremiumText: '大人数や長距離移動に向いた上質な移動手配です。',
+    fleetHiacePremiumItem1: '車 + ドライバー + 燃料付き',
+    fleetHiacePremiumItem2: 'ジャワ、中ジャワ、バリのルートに対応',
+    fleetHiacePremiumItem3: '団体旅行やイベント向けの観光車両',
+    videoBromoTitle: 'Bromo 日の出',
+    videoBromoText: '火山の朝焼けを映した短いシネマティックな瞬間。',
+    videoTumpakTitle: 'Tumpak Sewu',
+    videoTumpakText: '滝のアングルと山のシルエットを追う映像。',
+    videoIjenTitle: 'Ijen ブルーファイア',
+    videoIjenText: 'ドラマティックな夜間トレッキングの短い印象。',
+    askForPrice: '料金を問い合わせる',
+    packageDetailEyebrow: 'パッケージ詳細',
+    packageDetailHeading: 'Java Explorer 4日3泊',
+    packageDetailText: '快適さとプライベート感を重視したジャワ探険に向けて設計されたツアーです。',
+    packageDetailItem1: '経験豊富な現地ドライバー付きの専用車',
+    packageDetailItem2: 'Bromo 日の出ジープと滝トレッキング',
+    packageDetailItem3: 'ホテル対応と現地ガイドの調整',
+    packageDetailItem4: 'ルートに応じてスラバヤまたはバリで終了',
+    travelerStoriesEyebrow: '旅行者の声',
+    travelerStoriesTitle: '見た景色だけではなく、その感動を覚えている',
+    shortVideoEyebrow: 'ショート動画',
+    shortVideoTitle: '旅のリアルさを伝えるハイライト',
+    faqEyebrow: 'よくある質問',
+    faqHeading: 'よくある質問',
+    faqQuestion1: 'ツアーパッケージには何が含まれますか？',
+    faqAnswer1: 'ほとんどのパッケージには、専用交通、ドライバー、燃料、入場券、ジープ、朝食、現地ガイド、ミネラルウォーター、各パッケージに記載されたサポートが含まれます。',
+    faqQuestion2: 'マランからでも出発できますか？',
+    faqAnswer2: 'はい。行程やホテルの位置に応じて、マランから出発することもできます。',
+    faqQuestion3: '外国人でも予約できますか？',
+    faqAnswer3: 'はい。日本語や英語での対応に加え、外国人旅行者向けのカスタマイズも可能です。',
+    faqQuestion4: 'プライベートツアーは可能ですか？',
+    faqAnswer4: 'はい。Java Expedition では、家族、カップル、団体、または希望地に応じた柔軟なプライベートツアーを提供しています。'
   }
 };
 
@@ -165,12 +609,91 @@ const currentTheme = {
   key: 'light'
 };
 
+const defaultReviews = [
+  {
+    name: 'Emma & Daniel',
+    location: 'Australia',
+    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80',
+    text: 'The trip felt premium from the first WhatsApp chat. Everything was organized and beautifully executed, especially the sunrise at Bromo.',
+    stars: 5
+  },
+  {
+    name: 'Nadya',
+    location: 'Indonesia',
+    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80',
+    text: 'Very professional team, great route planning, and the views were even better than the photos.',
+    stars: 5
+  },
+  {
+    name: 'Lucas',
+    location: 'Germany',
+    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+    text: 'We loved how easy the logistics were. The team made a long journey feel smooth and memorable.',
+    stars: 5
+  }
+];
+
+const defaultSiteAssets = {
+  heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80',
+  posterImage: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80'
+};
+
 const waNumber = '6285231127887';
 const waBase = `https://wa.me/${waNumber}?text=`;
 const waMessage = {
-  en: 'Hello%20Voyage%20Horizon%2C%20I%20want%20to%20book%20a%20trip%20with%20you.',
-  id: 'Halo%20Voyage%20Horizon%2C%20saya%20ingin%20memesan%20perjalanan%20bersama%20Anda.'
+  en: 'Hello%20Java%20Expedition%2C%20I%20want%20to%20book%20a%20trip%20with%20you.',
+  id: 'Halo%20Java%20Expedition%2C%20saya%20ingin%20memesan%20perjalanan%20bersama%20Anda.',
+  zh: 'Hello%20Java%20Expedition%2C%20I%20want%20to%20book%20a%20trip%20with%20you.',
+  ja: 'Hello%20Java%20Expedition%2C%20旅行を予約したいです。'
 };
+
+function loadData(key, fallback) {
+  try {
+    const value = localStorage.getItem(key);
+    return value ? JSON.parse(value) : fallback;
+  } catch (error) {
+    return fallback;
+  }
+}
+
+function renderReviews() {
+  const container = document.getElementById('customerReviews');
+  if (!container) return;
+
+  const reviews = loadData('travelReviews', defaultReviews);
+  container.innerHTML = reviews.map((review, index) => {
+    const stars = '★'.repeat(Number(review.stars || 5)) + '☆'.repeat(5 - Number(review.stars || 5));
+    const isFeatured = index === 0 ? 'featured' : '';
+
+    return `
+      <article class="testimonial-card ${isFeatured} customer-review-card">
+        <div class="customer-review-header">
+          <img class="customer-review-avatar" src="${review.photo || 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80'}" alt="${review.name}" />
+          <div class="customer-review-meta">
+            <strong>${review.name}</strong>
+            <span>${review.location}</span>
+          </div>
+        </div>
+        <div class="stars" aria-label="${review.stars || 5} stars">${stars}</div>
+        <p>“${review.text || 'Great travel experience with Java Expedition.'}”</p>
+      </article>
+    `;
+  }).join('');
+}
+
+function applySiteAssets() {
+  const heroImage = document.getElementById('heroMainImage');
+  const posterImage = document.getElementById('posterMainImage');
+  const siteAssets = loadData('travelSiteAssets', defaultSiteAssets);
+
+  if (heroImage) {
+    heroImage.src = siteAssets.heroImage || defaultSiteAssets.heroImage;
+  }
+
+  if (posterImage) {
+    posterImage.src = siteAssets.posterImage || defaultSiteAssets.posterImage;
+  }
+}
 
 function applyTranslations(lang) {
   const active = translations[lang];
@@ -181,6 +704,23 @@ function applyTranslations(lang) {
     if (active[key]) {
       element.textContent = active[key];
     }
+  });
+
+  const labels = {
+    en: 'English',
+    id: 'Indonesia',
+    zh: 'Mandarin',
+    ja: 'Japanese'
+  };
+
+  if (selectedLanguageLabel) {
+    selectedLanguageLabel.textContent = labels[lang] || 'English';
+  }
+
+  languageOptions.forEach((option) => {
+    const isActive = option.dataset.lang === lang;
+    option.classList.toggle('active', isActive);
+    option.setAttribute('aria-checked', String(isActive));
   });
 
   const links = document.querySelectorAll('a[href*="wa.me"]');
@@ -211,6 +751,11 @@ function applyTheme(theme) {
 }
 
 const languageToggle = document.getElementById('langToggle');
+const languageMenu = document.getElementById('langMenu');
+const languageOptions = document.querySelectorAll('.lang-option');
+const selectedLanguageLabel = document.getElementById('selectedLanguageLabel');
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.querySelector('.main-nav');
 const themeToggle = document.getElementById('themeToggle');
 const galleryModal = document.getElementById('galleryModal');
 const modalImage = document.getElementById('modalImage');
@@ -239,10 +784,51 @@ const packageCatalog = [
   }
 ];
 
-languageToggle.addEventListener('click', () => {
-  currentLanguage.key = currentLanguage.key === 'en' ? 'id' : 'en';
-  applyTranslations(currentLanguage.key);
-});
+if (languageToggle && languageMenu) {
+  languageToggle.addEventListener('click', () => {
+    const isOpen = languageMenu.classList.toggle('is-open');
+    languageToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  languageOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+      const selectedLang = option.dataset.lang;
+      if (!selectedLang) return;
+
+      currentLanguage.key = selectedLang;
+      applyTranslations(selectedLang);
+      languageMenu.classList.remove('is-open');
+      languageToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const clickedInsideLangPicker = target.closest('.lang-picker');
+    if (!clickedInsideLangPicker) {
+      languageMenu.classList.remove('is-open');
+      languageToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('is-open');
+    navToggle.classList.toggle('is-active', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('is-open');
+      navToggle.classList.remove('is-active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 themeToggle.addEventListener('click', () => {
   const nextTheme = currentTheme.key === 'light' ? 'dark' : 'light';
@@ -335,5 +921,7 @@ document.addEventListener('keydown', (event) => {
 console.info('JS content model ready for CMS migration:', packageCatalog.length, 'packages');
 
 const savedTheme = localStorage.getItem('travelTheme') || 'light';
+applySiteAssets();
+renderReviews();
 applyTheme(savedTheme);
 applyTranslations(currentLanguage.key);
